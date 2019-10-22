@@ -1,1 +1,5 @@
-console.log('Hey TypeScript!');
+function orderError(error: string): never {
+  throw new Error(error);
+}
+
+orderError("Something went wrong");
