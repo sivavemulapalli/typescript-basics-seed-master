@@ -5,7 +5,9 @@ interface Sizes {
 interface Pizza extends Sizes {
   name: string;
   sizes: string[];
+  toppings?: number;
   getAvailableSizes(): string[];
+  [key: number]: string;
 }
 
 let pizza: Pizza;
@@ -21,3 +23,6 @@ function createPizza(name: string, sizes: string[]): Pizza {
 }
 
 pizza = createPizza("Pepperoni", ["small", "medium"]);
+pizza[1] = "xyz";
+
+pizza.toppings = 1;
