@@ -31,3 +31,9 @@ console.log(pizza.availableSizes);
 pizza.updateSizes(["large"]);
 
 console.log(pizza.availableSizes);
+
+pizza.availableSizes = ["small", "large"];
+console.log(pizza.availableSizes);
+
+pizza.sizes = ["medium", "large"];
+console.log(pizza.availableSizes);
