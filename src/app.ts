@@ -1,5 +1,5 @@
 class Sizes {
-  constructor(public sizes: string[]) {}
+  constructor(private sizes: string[]) {}
 
   set availableSizes(sizes: string[]) {
     this.sizes = sizes;
